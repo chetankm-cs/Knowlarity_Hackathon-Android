@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#f44</color>
+    <color name="yellow">#ff4</color>
+    <color name="pink">#f4f</color>
+    <color name="blue">#44f</color>
+    <color name="green_bright">#4f4</color>
+    <color name="green">#5dd32e</color>
+    <color name="orange">#f94</color>
+    <color name="purple">#909</color>
+    <color name="cyan">#2BD1FA</color>
+    <color name="pink2">#FE5C98</color>
+    <color name="cyan_green">#2BFAAA</color>
+</resources>
