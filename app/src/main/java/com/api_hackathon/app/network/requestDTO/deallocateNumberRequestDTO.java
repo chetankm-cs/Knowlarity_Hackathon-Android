@@ -3,7 +3,7 @@ package com.api_hackathon.app.network.requestDTO;
 /**
  * Created by USER on 17-01-2015.
  */
-public class deallocateNumberRequestDTO {
+public class DeallocateNumberRequestDTO {
 
     private String username;
     private String password;

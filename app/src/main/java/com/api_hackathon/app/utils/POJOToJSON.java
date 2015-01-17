@@ -43,6 +43,10 @@ public class POJOToJSON {
         return sw.toString();
     }
 
+    public static String toEncryptedJSON(Object pojo, boolean prettyPrint) throws Exception{
+        return  toJson(pojo, prettyPrint);
+    }
+
     public static void toJson(Object pojo, FileWriter fw, boolean prettyPrint)
             throws IOException {
         JsonGenerator jg = jsonFactory.createJsonGenerator(fw);

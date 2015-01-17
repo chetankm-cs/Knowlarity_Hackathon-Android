@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.api_hackathon.app.views.IvrActivity">
+
+    <Spinner
+            android:id="@+id/blood_group_spinner"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/spinner_bg_pressed"
+            android:entries="@array/blood_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/search_icon"/>
+        <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:hint="@string/search"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/contacts_list_view"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+    <Button
+            android:id="@+id/send_button"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@color/red"
+            android:textColor="#fff"
+            android:text="@string/send_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

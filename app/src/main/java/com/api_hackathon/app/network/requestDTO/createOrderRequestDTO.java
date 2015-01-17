@@ -3,8 +3,8 @@ package com.api_hackathon.app.network.requestDTO;
 /**
  * Created by USER on 17-01-2015.
  */
-public class createOrderRequestDTO {
-    private String description_key;
+public class CreateOrderRequestDTO {
+    private String decryption_key;
     private String ivr_id;
     private String end_time;
     private String start_time;
@@ -16,12 +16,12 @@ public class createOrderRequestDTO {
     private String skip_days;
     private String is_transaction;
 
-    public String getDescription_key() {
-        return description_key;
+    public String getDecryption_key() {
+        return decryption_key;
     }
 
-    public void setDescription_key(String description_key) {
-        this.description_key = description_key;
+    public void setDecryption_key(String decryption_key) {
+        this.decryption_key = decryption_key;
     }
 
     public String getIvr_id() {

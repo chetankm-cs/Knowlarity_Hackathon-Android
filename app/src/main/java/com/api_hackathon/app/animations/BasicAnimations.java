@@ -10,7 +10,7 @@ import com.api_hackathon.app.R;
  */
 public class BasicAnimations {
     private Context context;
-    public Animation zoomIn, fade, rotate,translate;
+    public Animation zoomIn, fade, rotate,translate,flip;
     public BasicAnimations(Context context) {
         this.context = context;
         zoomIn = AnimationUtils.loadAnimation(context, R.anim.zoom_in);

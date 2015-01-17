@@ -3,7 +3,7 @@ package com.api_hackathon.app.network.requestDTO;
 /**
  * Created by USER on 17-01-2015.
  */
-public class addCallsToOrderRequestDTO {
+public class AddCallsToOrderRequestDTO {
 
     private String decryption_key;
     private String order_id;

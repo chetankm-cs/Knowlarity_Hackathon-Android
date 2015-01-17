@@ -5,5 +5,23 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    <string name="generate_request">Want blood</string>
+    <string name="your_blood_group">Your blood group</string>
+    <string name="send_request">Send Request</string>
+    <string name="your_contact_number">Your contact number</string>
+    <string name="title_activity_ivr">IvrActivity</string>
+    <string name="search_and_select">Search &amp; Select</string>
+    <string name="search">Search</string>
+    <string name="register">Register</string>
+    <string name="tagLine"><b>Blood</b> Should Circulate.</string>
+    <array name="blood_group">
+        <item name="A positive"> A positive</item>
+        <item name="B positive">B positive</item>
+        <item name="A negative">A negative</item>
+        <item name="B negative">B negative</item>
+        <item name="AB positive">AB positive</item>
+        <item name="AB negative">AB negative</item>
+        <item name="O positive">O positive</item>
+        <item name="O negative">O negative</item>
+    </array>
 </resources>

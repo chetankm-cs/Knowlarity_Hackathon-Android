@@ -1,41 +1,45 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="com.api_hackathon.app.views.MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/red"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              tools:context="com.api_hackathon.app.views.MainActivity">
 
     <TextView
-            android:text="@string/hello_world"
+            android:textSize="60dp"
+            android:gravity="center"
+            android:text="@string/tagLine"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    <Button
-            android:id="@+id/nikhil_button1"
-            android:text="Nikhil"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginBottom="25dp"
+            />
+
+    <EditText
+            android:id="@+id/my_contact_number_edit_text"
             android:layout_margin="10dp"
-            android:background="@color/blue"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    <Button
-            android:id="@+id/nikhil_button2"
-            android:text="Nikhil"
-            android:layout_margin="10dp"
-            android:background="@color/red"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    <Button
-            android:id="@+id/nikhil_button3"
-            android:text="Nikhil"
-            android:layout_margin="10dp"
-            android:background="@color/green"
-            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/your_contact_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-</LinearLayout>
+    <Button
+            android:id="@+id/register_button"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/my_contact_number_edit_text"
+            android:background="@color/green"
+            android:text="@string/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

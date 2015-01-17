@@ -27,11 +27,11 @@ public class VolleyImplementation {
         this.demoErrorListener = demoErrorListener;
     }
 
-    public void postRequest(String tag, String jsonString) {
+    public void postRequest(String baseURL, String tag, String jsonString) {
         try {
-            Log.w(TAG,"URL :"+tag);
+            Log.w(TAG,"URL :"+baseURL+tag);
             Log.w(TAG,"Request :" + jsonString);
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, URL.getFullURL(tag), new JSONObject(jsonString), demoResponseListener, demoErrorListener);
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, (baseURL+tag), new JSONObject(jsonString), demoResponseListener, demoErrorListener);
 
             RetryPolicy policy = new DefaultRetryPolicy(WebServicesConstants.volleyRequestTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
             jsonObjectRequest.setRetryPolicy(policy);
@@ -41,11 +41,11 @@ public class VolleyImplementation {
         }
     }
 
-    public void postRequestWitDialog(String tag, String jsonString) {
+    public void postRequestWitDialog(String baseURL, String tag, String jsonString) {
         try {
             ringProgressDialog = ProgressDialog.show(context, null, "Loading...", true);
             ringProgressDialog.setCancelable(false);
-            postRequest(tag,jsonString);
+            postRequest(baseURL,tag,jsonString);
         } catch (Exception e) {
             e.printStackTrace();
         }
