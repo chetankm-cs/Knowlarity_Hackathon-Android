@@ -11,7 +11,7 @@ public class AppConstants {
     public static final String ivr_key= "ivr_id";
     public static final String phone_book_key= "phone_book";
     public static final String phone_book_value= "7406404867";
-
+    public static final String REG_ID = "regId";
     public static final String APP_SHARED_PREFERENCE = "com.hul.peel.android";
     public static final String myContactPrefKey= "myContactPrefKey";
 

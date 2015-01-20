@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -31,14 +30,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         SharedPreferences sharedPreference = getSharedPreferences(
                 AppConstants.APP_SHARED_PREFERENCE, Context.MODE_PRIVATE);
-        if(sharedPreference.getString(AppConstants.myContactPrefKey,"").length()>0){
-            Intent intent = new Intent(MainActivity.this, IvrActivity.class);
-            startActivity(intent);
-            finish();
-        }
-
-
-
+//        if (sharedPreference.getString(AppConstants.myContactPrefKey, "").length() > 0) {
+//            Intent intent = new Intent(MainActivity.this, IvrActivity.class);
+//            startActivity(intent);
+//            finish();
+//        }
         basicAnimations = new BasicAnimations(this);
 
         registerButton = (Button) findViewById(R.id.register_button);
@@ -56,10 +52,10 @@ public class MainActivity extends Activity {
                     SharedPreferences sharedPreference = getSharedPreferences(
                             AppConstants.APP_SHARED_PREFERENCE, Context.MODE_PRIVATE);
                     sharedPreference.edit().putString(AppConstants.myContactPrefKey, editText.getText().toString()).commit();
-                    Log.w(TAG,"No " + editText.getText().toString());
-                    Log.w(TAG, "Number : "+sharedPreference.getString(AppConstants.myContactPrefKey,""));
-                    Intent intent = new Intent(MainActivity.this, IvrActivity.class);
-                    startActivity(intent);
+                    Log.w(TAG, "Number : " + sharedPreference.getString(AppConstants.myContactPrefKey, ""));
+//                    Intent intent = new Intent(MainActivity.this, IvrActivity.class);
+//                    startActivity(intent);
+                    new GCMAcitivityRegister(MainActivity.this, editText.getText().toString());
                     break;
                 }
             }

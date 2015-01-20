@@ -36,7 +36,7 @@ public class GcmIntentService  extends IntentService {
         GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
 
         String messageType = gcm.getMessageType(intent);
-
+        Log.w(TAG,"message............."+messageType);
         if (!extras.isEmpty()) {
             if (GoogleCloudMessaging.MESSAGE_TYPE_SEND_ERROR
                     .equals(messageType)) {
@@ -48,21 +48,10 @@ public class GcmIntentService  extends IntentService {
             } else if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE
                     .equals(messageType)) {
 
-                for (int i = 0; i < 3; i++) {
-                    Log.i(TAG,
-                            "Working... " + (i + 1) + "/5 @ "
-                                    + SystemClock.elapsedRealtime());
-                    try {
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                    }
-
-                }
-                Log.i(TAG, "Completed work @ " + SystemClock.elapsedRealtime());
 
                 sendNotification("Message Received from Google GCM Server: "
                         + extras.get(Config.MESSAGE_KEY));
-                Log.i(TAG, "Received: " + extras.toString());
+                Log.i(TAG, "Received:::::::: " + extras.toString());
             }
         }
         GcmBroadcastReceiver.completeWakefulIntent(intent);

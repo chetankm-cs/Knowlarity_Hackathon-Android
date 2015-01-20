@@ -13,7 +13,7 @@ public interface Config {
         // "http://192.168.1.17:8080/GCM-App-Server/GCMNotification?shareRegId=1";
 
         // Google Project Number
-        static final String GOOGLE_PROJECT_ID = "inspired-memory-828";
+        static final String GOOGLE_PROJECT_ID = "308376442481";
         static final String MESSAGE_KEY = "message";
 
 }
