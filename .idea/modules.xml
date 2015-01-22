@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Api_hackathon.iml" filepath="$PROJECT_DIR$/Api_hackathon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api_hackathon_ivr.iml" filepath="$PROJECT_DIR$/api_hackathon_ivr.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
